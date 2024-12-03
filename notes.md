@@ -51,7 +51,7 @@ teardown of these tests but I think for this project it won't be necessary.
 
 Things I want to do next:
 - [ ] Learn to use multiple tabs with vim
-- [ ] Implement `ReadTextFileToLines`
+- [X] Implement `ReadTextFileToLines`
 - [ ] Investigate CTRL backspace in vim and Ubuntu terminal
 - [ ] Small script to configure and build utils project
 - [ ] add execution of tests to script
@@ -60,3 +60,22 @@ Things I want to do next:
 Starting AoC a bit late because of Thanksgiving week but I am here now. Just moved all this project
 from my work laptop to here since I don't have a personal laptop at the moment. Just gonna work on 
 completing the 2 days of AoC and then focus on the other bells and whistles the next day.
+
+So update on my work, I finished making the whole repo a CMake project and a 2024 project. I think 
+I will only work on day 1 and continue on tomorrow. I was able to implement `ReadTextFileToLines`. 
+The script to configure and build will definitely be huge. So I'll probably work on that soon.
+
+*Notes on CMake multiple projects*
+I had to make the top level `aoc/` directory a CMake project to link `2024/` with `utils/`. I will 
+need to add a few things to the build script so I can build certain targets. I had to add options 
+to manually set whether I want to build `utils/` or not. I also need to move the exectuables to 
+have them more accessible. I can see the strength of CMake, it is just annoying to work with. 
+Anyways, I just condition `add_subdirectory(<project>)` based on the options I created which are 
+just macros I manually set such as `cmake .. -DBUILD_UTILS=ON`. 
+
+*Notes on 2024 source code setup*
+I went with making this a single executable where I will be adding `dayXX` functions to a single 
+`main.cpp` file with a `main()` function. I also decided on storing all my input text files in 
+`data/` and will need to work with the build script to move these text files appropriately too 
+since I will need the path to be consistent. Maybe I will just have all my input files under 
+`aoc/inputs/2024/` but idk, that seems ugly since I wanted everything separated by year.
