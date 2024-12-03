@@ -3,5 +3,5 @@
 
 namespace AOC::utils
 {
-    std::vector<std::string> ReadTextFileToLines(std::string filename);
+    std::vector<std::string> ReadTextFileToLines(const std::string& filename);
 } // namespace AOC::utils
