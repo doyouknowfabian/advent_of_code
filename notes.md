@@ -79,3 +79,14 @@ I went with making this a single executable where I will be adding `dayXX` funct
 `data/` and will need to work with the build script to move these text files appropriately too 
 since I will need the path to be consistent. Maybe I will just have all my input files under 
 `aoc/inputs/2024/` but idk, that seems ugly since I wanted everything separated by year.
+
+## 12/8/2024
+Didn't get around to day2 until Saturday December 7th, and even then only got through part 1. I 
+finally got part 2 today. This had to do with refactoring part of the solution from part 1 into a 
+helper function. This made the code a lot more succinct. I wonder if ther is a more optimal way for
+doing this. I just made a bunch of permutations. I took a peek at day3 and it involves regex -_-
+
+*Notes from implementation*
+I didn't really learn much except how annoying parsing is in C++. I am using `std::istringstream` 
+a lot which helps but still am not entirely sure how it works under the hood. I am assuming use of 
+C parsing functions like stoi, etc.
