@@ -40,7 +40,7 @@ namespace AOC::Year2024
 
     void day2()
     {
-        std::vector<std::string> reports = utils::ReadTextFileToLines("../inputs/day2.txt");
+        std::vector<std::string> reports = utils::ReadTextFileToLines("2024/inputs/day2.txt");
         
         std::vector<bool> reportSafety;
 

@@ -4,7 +4,7 @@
 
 TEST(UtilsTest, ReadTextFile)
 {
-    std::vector<std::string> fileLines = AOC::utils::ReadTextFileToLines("../tests/data/test0.txt");
+    std::vector<std::string> fileLines = AOC::utils::ReadTextFileToLines("utils/tests/data/test0.txt");
     EXPECT_EQ(fileLines.size(), 5);
     EXPECT_EQ(fileLines[0], "a");
     EXPECT_EQ(fileLines[1], "b");
