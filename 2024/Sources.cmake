@@ -8,4 +8,5 @@ target_sources(2024
     "main.cpp"
     "src/day1.cpp"
     "src/day2.cpp"
+    "src/day3.cpp"
 )
