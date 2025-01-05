@@ -10,7 +10,7 @@
 
 namespace AOC::Year2024
 {
-void day1()
+void day01()
 {
     std::vector<std::string> pairs = utils::ReadTextFileToLines("2024/inputs/day1.txt");
     assert(pairs[0] == "88276   66757");

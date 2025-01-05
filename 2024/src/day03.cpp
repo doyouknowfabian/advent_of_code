@@ -7,7 +7,7 @@
 
 namespace AOC::Year2024
 {
-void day3()
+void day03()
 {
     std::vector<std::string> lines = utils::ReadTextFileToLines("2024/inputs/day3.txt");
 

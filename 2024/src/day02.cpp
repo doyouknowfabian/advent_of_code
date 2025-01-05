@@ -38,7 +38,7 @@ namespace AOC::Year2024
 
     }
 
-    void day2()
+    void day02()
     {
         std::vector<std::string> reports = utils::ReadTextFileToLines("2024/inputs/day2.txt");
         
